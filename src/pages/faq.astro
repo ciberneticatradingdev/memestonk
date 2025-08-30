@@ -1,0 +1,342 @@
+---
+import Layout from "../layouts/Layout.astro";
+---
+
+<Layout
+	title="FAQ - Clankers Dynamics"
+	description="Find answers to frequently asked questions about Clankers Dynamics, CLANK tokens, and our ecosystem. Get support and learn more."
+	image="/og-image.jpg"
+	url="https://clankersdynamics.com/faq"
+	type="website"
+	author="Clankers Dynamics Team"
+	keywords="clankers, dynamics, FAQ, questions, support, help, CLANK, tokens"
+	robots="index, follow"
+>
+  <main class="min-h-screen bg-gradient-to-b from-gray-100 to-white font-sans">
+    <!-- Navigation Bar -->
+    <nav class="bg-gradient-to-b from-gray-200 to-gray-300 border-b-2" style="border-bottom: 2px solid #999; box-shadow: inset 0 1px 0 #fff, 0 1px 2px rgba(0,0,0,0.1);">
+      <div class="w-full mx-auto">
+        <div class="flex items-center justify-center py-2">
+          <div class="flex items-center space-x-8">
+            <div class="text-red-500 font-bold text-lg" style="filter: drop-shadow(1px 1px 1px rgba(0,0,0,0.3));">🍎</div>
+            <a href="/" class="text-sm text-gray-800 hover:text-black font-medium transition-colors" style="text-shadow: 1px 1px 1px rgba(255,255,255,0.8);">Home</a>
+            <a href="/about" class="text-sm text-gray-800 hover:text-black font-medium transition-colors" style="text-shadow: 1px 1px 1px rgba(255,255,255,0.8);">About</a>
+            <a href="/store" class="text-sm text-gray-800 hover:text-black font-medium transition-colors" style="text-shadow: 1px 1px 1px rgba(255,255,255,0.8);">Store</a>
+            <a href="/community" class="text-sm text-gray-800 hover:text-black font-medium transition-colors" style="text-shadow: 1px 1px 1px rgba(255,255,255,0.8);">Community</a>
+            <a href="/tokenomics" class="text-sm text-gray-800 hover:text-black font-medium transition-colors" style="text-shadow: 1px 1px 1px rgba(255,255,255,0.8);">Tokenomics</a>
+            <a href="/faq" class="text-sm text-black font-bold" style="text-shadow: 1px 1px 1px rgba(255,255,255,0.8);">FAQ</a>
+          </div>
+        </div>
+        <div class="flex items-center justify-center h-6 text-xs" style="background: linear-gradient(to bottom, #e8e8e8, #d0d0d0); border-top: 1px solid #ccc;">
+          <div class="flex items-center space-x-6">
+            <span class="text-gray-700 font-medium" style="text-shadow: 1px 1px 1px rgba(255,255,255,0.8);">The Future of Memecoin Innovation</span>
+            <span class="text-gray-600">|</span>
+            <span class="text-gray-700 font-medium" style="text-shadow: 1px 1px 1px rgba(255,255,255,0.8);">Built for the Community</span>
+            <span class="text-gray-600">|</span>
+            <span class="text-gray-700 font-medium" style="text-shadow: 1px 1px 1px rgba(255,255,255,0.8);">Retro Style, Modern Tech</span>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Page Header -->
+    <div class="bg-gradient-to-r from-blue-50 to-purple-50 py-16">
+      <div class="max-w-4xl mx-auto px-4 text-center">
+        <h1 class="text-5xl font-light mb-6 text-gray-800" style="font-family: 'Times New Roman', serif;">Frequently Asked Questions</h1>
+        <p class="text-xl text-gray-600 max-w-2xl mx-auto">Find answers to common questions about Clankers Dynamics, our tokens, and how to get involved</p>
+      </div>
+    </div>
+
+    <!-- Search Bar -->
+    <div class="max-w-2xl mx-auto px-4 -mt-8 relative z-10">
+      <div class="bg-white rounded-lg shadow-lg p-4" style="box-shadow: 0 4px 12px rgba(0,0,0,0.1), inset 0 1px 0 rgba(255,255,255,0.8);">
+        <div class="flex items-center">
+          <span class="text-gray-400 mr-3">🔍</span>
+          <input type="text" id="faq-search" placeholder="Search for answers..." class="flex-1 outline-none text-gray-700">
+        </div>
+      </div>
+    </div>
+
+    <!-- Main Content -->
+    <div class="max-w-4xl mx-auto px-4 py-16">
+      <!-- FAQ Categories -->
+      <div class="mb-12">
+        <div class="flex flex-wrap justify-center gap-4 mb-8">
+          <button class="faq-category-btn active px-6 py-2 rounded-full font-medium transition-all duration-200" data-category="all">All Questions</button>
+          <button class="faq-category-btn px-6 py-2 rounded-full font-medium transition-all duration-200" data-category="general">General</button>
+          <button class="faq-category-btn px-6 py-2 rounded-full font-medium transition-all duration-200" data-category="tokens">Tokens</button>
+          <button class="faq-category-btn px-6 py-2 rounded-full font-medium transition-all duration-200" data-category="technical">Technical</button>
+          <button class="faq-category-btn px-6 py-2 rounded-full font-medium transition-all duration-200" data-category="community">Community</button>
+        </div>
+      </div>
+
+      <!-- FAQ Items -->
+      <div class="space-y-4" id="faq-container">
+        <!-- General Questions -->
+        <div class="faq-item bg-white rounded-lg shadow-lg" data-category="general" style="box-shadow: 0 4px 12px rgba(0,0,0,0.1), inset 0 1px 0 rgba(255,255,255,0.8);">
+          <button class="faq-question w-full text-left p-6 flex justify-between items-center hover:bg-gray-50 transition-colors duration-200">
+            <span class="font-semibold text-gray-800">What is Clankers Dynamics?</span>
+            <span class="faq-icon text-2xl text-gray-400 transition-transform duration-200">+</span>
+          </button>
+          <div class="faq-answer hidden px-6 pb-6">
+            <p class="text-gray-600">Clankers Dynamics is a community-driven memecoin project that combines retro aesthetics with modern blockchain technology. We're building an ecosystem that includes exclusive merchandise, community rewards, and innovative features powered by our CLANK token.</p>
+          </div>
+        </div>
+
+        <div class="faq-item bg-white rounded-lg shadow-lg" data-category="general" style="box-shadow: 0 4px 12px rgba(0,0,0,0.1), inset 0 1px 0 rgba(255,255,255,0.8);">
+          <button class="faq-question w-full text-left p-6 flex justify-between items-center hover:bg-gray-50 transition-colors duration-200">
+            <span class="font-semibold text-gray-800">How did Clankers Dynamics start?</span>
+            <span class="faq-icon text-2xl text-gray-400 transition-transform duration-200">+</span>
+          </button>
+          <div class="faq-answer hidden px-6 pb-6">
+            <p class="text-gray-600">Clankers Dynamics was born from a passion for retro computing aesthetics and the desire to create a memecoin that actually provides value to its community. Our team of developers and designers came together to build something unique that bridges nostalgia with cutting-edge blockchain technology.</p>
+          </div>
+        </div>
+
+        <div class="faq-item bg-white rounded-lg shadow-lg" data-category="general" style="box-shadow: 0 4px 12px rgba(0,0,0,0.1), inset 0 1px 0 rgba(255,255,255,0.8);">
+          <button class="faq-question w-full text-left p-6 flex justify-between items-center hover:bg-gray-50 transition-colors duration-200">
+            <span class="font-semibold text-gray-800">Is Clankers Dynamics safe and legitimate?</span>
+            <span class="faq-icon text-2xl text-gray-400 transition-transform duration-200">+</span>
+          </button>
+          <div class="faq-answer hidden px-6 pb-6">
+            <p class="text-gray-600">Yes, Clankers Dynamics is a legitimate project with a transparent team and clear roadmap. Our smart contracts are audited, our tokenomics are public, and we maintain active communication with our community. However, as with any cryptocurrency investment, please do your own research and only invest what you can afford to lose.</p>
+          </div>
+        </div>
+
+        <!-- Token Questions -->
+        <div class="faq-item bg-white rounded-lg shadow-lg" data-category="tokens" style="box-shadow: 0 4px 12px rgba(0,0,0,0.1), inset 0 1px 0 rgba(255,255,255,0.8);">
+          <button class="faq-question w-full text-left p-6 flex justify-between items-center hover:bg-gray-50 transition-colors duration-200">
+            <span class="font-semibold text-gray-800">What is the CLANK token?</span>
+            <span class="faq-icon text-2xl text-gray-400 transition-transform duration-200">+</span>
+          </button>
+          <div class="faq-answer hidden px-6 pb-6">
+            <p class="text-gray-600">CLANK is the native utility token of the Clankers Dynamics ecosystem. It can be used for purchasing merchandise, participating in governance, earning staking rewards, and accessing exclusive features. The total supply is fixed at 1 billion tokens with no inflation.</p>
+          </div>
+        </div>
+
+        <div class="faq-item bg-white rounded-lg shadow-lg" data-category="tokens" style="box-shadow: 0 4px 12px rgba(0,0,0,0.1), inset 0 1px 0 rgba(255,255,255,0.8);">
+          <button class="faq-question w-full text-left p-6 flex justify-between items-center hover:bg-gray-50 transition-colors duration-200">
+            <span class="font-semibold text-gray-800">How can I buy CLANK tokens?</span>
+            <span class="faq-icon text-2xl text-gray-400 transition-transform duration-200">+</span>
+          </button>
+          <div class="faq-answer hidden px-6 pb-6">
+            <p class="text-gray-600">You can purchase CLANK tokens through decentralized exchanges (DEXs) like Uniswap, PancakeSwap, or other supported platforms. Make sure to use the official contract address and be cautious of scams. We'll also be listing on centralized exchanges as we grow.</p>
+          </div>
+        </div>
+
+        <div class="faq-item bg-white rounded-lg shadow-lg" data-category="tokens" style="box-shadow: 0 4px 12px rgba(0,0,0,0.1), inset 0 1px 0 rgba(255,255,255,0.8);">
+          <button class="faq-question w-full text-left p-6 flex justify-between items-center hover:bg-gray-50 transition-colors duration-200">
+            <span class="font-semibold text-gray-800">Can I stake my CLANK tokens?</span>
+            <span class="faq-icon text-2xl text-gray-400 transition-transform duration-200">+</span>
+          </button>
+          <div class="faq-answer hidden px-6 pb-6">
+            <p class="text-gray-600">Yes! We offer staking rewards for CLANK holders. By staking your tokens, you can earn passive rewards and participate in exclusive community events. Staking also helps secure the network and shows your long-term commitment to the project.</p>
+          </div>
+        </div>
+
+        <div class="faq-item bg-white rounded-lg shadow-lg" data-category="tokens" style="box-shadow: 0 4px 12px rgba(0,0,0,0.1), inset 0 1px 0 rgba(255,255,255,0.8);">
+          <button class="faq-question w-full text-left p-6 flex justify-between items-center hover:bg-gray-50 transition-colors duration-200">
+            <span class="font-semibold text-gray-800">What is the token burn mechanism?</span>
+            <span class="faq-icon text-2xl text-gray-400 transition-transform duration-200">+</span>
+          </button>
+          <div class="faq-answer hidden px-6 pb-6">
+            <p class="text-gray-600">A portion of tokens used in transactions within our ecosystem are permanently burned (removed from circulation). This creates deflationary pressure and increases the scarcity of remaining tokens over time, potentially benefiting long-term holders.</p>
+          </div>
+        </div>
+
+        <!-- Technical Questions -->
+        <div class="faq-item bg-white rounded-lg shadow-lg" data-category="technical" style="box-shadow: 0 4px 12px rgba(0,0,0,0.1), inset 0 1px 0 rgba(255,255,255,0.8);">
+          <button class="faq-question w-full text-left p-6 flex justify-between items-center hover:bg-gray-50 transition-colors duration-200">
+            <span class="font-semibold text-gray-800">Which blockchain is CLANK built on?</span>
+            <span class="faq-icon text-2xl text-gray-400 transition-transform duration-200">+</span>
+          </button>
+          <div class="faq-answer hidden px-6 pb-6">
+            <p class="text-gray-600">CLANK is currently built on Ethereum, taking advantage of its security and widespread adoption. We're also exploring multi-chain compatibility to provide users with more options and lower transaction fees in the future.</p>
+          </div>
+        </div>
+
+        <div class="faq-item bg-white rounded-lg shadow-lg" data-category="technical" style="box-shadow: 0 4px 12px rgba(0,0,0,0.1), inset 0 1px 0 rgba(255,255,255,0.8);">
+          <button class="faq-question w-full text-left p-6 flex justify-between items-center hover:bg-gray-50 transition-colors duration-200">
+            <span class="font-semibold text-gray-800">What wallet should I use to store CLANK?</span>
+            <span class="faq-icon text-2xl text-gray-400 transition-transform duration-200">+</span>
+          </button>
+          <div class="faq-answer hidden px-6 pb-6">
+            <p class="text-gray-600">You can store CLANK tokens in any ERC-20 compatible wallet, including MetaMask, Trust Wallet, Coinbase Wallet, or hardware wallets like Ledger and Trezor. Always ensure you're using official wallet applications and keep your private keys secure.</p>
+          </div>
+        </div>
+
+        <div class="faq-item bg-white rounded-lg shadow-lg" data-category="technical" style="box-shadow: 0 4px 12px rgba(0,0,0,0.1), inset 0 1px 0 rgba(255,255,255,0.8);">
+          <button class="faq-question w-full text-left p-6 flex justify-between items-center hover:bg-gray-50 transition-colors duration-200">
+            <span class="font-semibold text-gray-800">Are the smart contracts audited?</span>
+            <span class="faq-icon text-2xl text-gray-400 transition-transform duration-200">+</span>
+          </button>
+          <div class="faq-answer hidden px-6 pb-6">
+            <p class="text-gray-600">Yes, our smart contracts have been audited by reputable security firms. We believe in transparency and security, so all audit reports are publicly available. We also conduct regular security reviews as we add new features to the ecosystem.</p>
+          </div>
+        </div>
+
+        <!-- Community Questions -->
+        <div class="faq-item bg-white rounded-lg shadow-lg" data-category="community" style="box-shadow: 0 4px 12px rgba(0,0,0,0.1), inset 0 1px 0 rgba(255,255,255,0.8);">
+          <button class="faq-question w-full text-left p-6 flex justify-between items-center hover:bg-gray-50 transition-colors duration-200">
+            <span class="font-semibold text-gray-800">How can I join the community?</span>
+            <span class="faq-icon text-2xl text-gray-400 transition-transform duration-200">+</span>
+          </button>
+          <div class="faq-answer hidden px-6 pb-6">
+            <p class="text-gray-600">Join our vibrant community on Discord, follow us on Twitter, and participate in our Telegram group. We regularly host AMAs, contests, and community events. Check out our Community page for all the links and upcoming events.</p>
+          </div>
+        </div>
+
+        <div class="faq-item bg-white rounded-lg shadow-lg" data-category="community" style="box-shadow: 0 4px 12px rgba(0,0,0,0.1), inset 0 1px 0 rgba(255,255,255,0.8);">
+          <button class="faq-question w-full text-left p-6 flex justify-between items-center hover:bg-gray-50 transition-colors duration-200">
+            <span class="font-semibold text-gray-800">How does governance work?</span>
+            <span class="faq-icon text-2xl text-gray-400 transition-transform duration-200">+</span>
+          </button>
+          <div class="faq-answer hidden px-6 pb-6">
+            <p class="text-gray-600">CLANK holders can participate in governance by voting on proposals that shape the future of the project. Voting power is proportional to the number of tokens held. We use a transparent, on-chain governance system where all votes are publicly recorded.</p>
+          </div>
+        </div>
+
+        <div class="faq-item bg-white rounded-lg shadow-lg" data-category="community" style="box-shadow: 0 4px 12px rgba(0,0,0,0.1), inset 0 1px 0 rgba(255,255,255,0.8);">
+          <button class="faq-question w-full text-left p-6 flex justify-between items-center hover:bg-gray-50 transition-colors duration-200">
+            <span class="font-semibold text-gray-800">Can I contribute to the project?</span>
+            <span class="faq-icon text-2xl text-gray-400 transition-transform duration-200">+</span>
+          </button>
+          <div class="faq-answer hidden px-6 pb-6">
+            <p class="text-gray-600">Absolutely! We welcome contributions from the community. Whether you're a developer, designer, marketer, or just passionate about the project, there are many ways to get involved. Reach out to us on Discord or check our GitHub for open-source contributions.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Contact Support -->
+      <section class="mt-16">
+        <div class="bg-gradient-to-r from-blue-50 to-purple-50 rounded-lg p-8 text-center">
+          <h2 class="text-3xl font-light mb-4 text-gray-800" style="font-family: 'Times New Roman', serif;">Still Have Questions?</h2>
+          <p class="text-gray-600 mb-6 max-w-2xl mx-auto">Can't find the answer you're looking for? Our community and support team are here to help you get the information you need.</p>
+          <div class="flex flex-col sm:flex-row gap-4 justify-center">
+            <a href="#" class="inline-block px-8 py-3 bg-gradient-to-b from-blue-400 to-blue-600 text-white rounded-lg font-medium hover:from-blue-500 hover:to-blue-700 transition-all duration-200 shadow-lg" style="box-shadow: inset 0 1px 0 rgba(255,255,255,0.3), 0 2px 4px rgba(0,0,0,0.3);">Join Discord</a>
+            <a href="#" class="inline-block px-8 py-3 bg-gradient-to-b from-gray-400 to-gray-600 text-white rounded-lg font-medium hover:from-gray-500 hover:to-gray-700 transition-all duration-200 shadow-lg" style="box-shadow: inset 0 1px 0 rgba(255,255,255,0.3), 0 2px 4px rgba(0,0,0,0.3);">Contact Support</a>
+          </div>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <script>
+    // FAQ functionality
+    document.addEventListener('DOMContentLoaded', () => {
+      const faqItems = document.querySelectorAll('.faq-item');
+      const categoryBtns = document.querySelectorAll('.faq-category-btn');
+      const searchInput = document.getElementById('faq-search');
+      const faqContainer = document.getElementById('faq-container');
+
+      // FAQ accordion functionality
+      faqItems.forEach(item => {
+        const question = item.querySelector('.faq-question');
+        const answer = item.querySelector('.faq-answer');
+        const icon = item.querySelector('.faq-icon');
+
+        question.addEventListener('click', () => {
+          const isOpen = !answer.classList.contains('hidden');
+          
+          // Close all other FAQ items
+          faqItems.forEach(otherItem => {
+            const otherAnswer = otherItem.querySelector('.faq-answer');
+            const otherIcon = otherItem.querySelector('.faq-icon');
+            otherAnswer.classList.add('hidden');
+            otherIcon.textContent = '+';
+            otherIcon.style.transform = 'rotate(0deg)';
+          });
+
+          // Toggle current item
+          if (isOpen) {
+            answer.classList.add('hidden');
+            icon.textContent = '+';
+            icon.style.transform = 'rotate(0deg)';
+          } else {
+            answer.classList.remove('hidden');
+            icon.textContent = '−';
+            icon.style.transform = 'rotate(180deg)';
+          }
+        });
+      });
+
+      // Category filtering
+      categoryBtns.forEach(btn => {
+        btn.addEventListener('click', () => {
+          const category = btn.dataset.category;
+          
+          // Update active button
+          categoryBtns.forEach(b => {
+            b.classList.remove('active');
+            b.style.backgroundColor = '';
+            b.style.color = '';
+          });
+          btn.classList.add('active');
+          btn.style.backgroundColor = '#3b82f6';
+          btn.style.color = 'white';
+
+          // Filter FAQ items
+          faqItems.forEach(item => {
+            if (category === 'all' || item.dataset.category === category) {
+              item.style.display = 'block';
+            } else {
+              item.style.display = 'none';
+            }
+          });
+        });
+      });
+
+      // Search functionality
+      searchInput.addEventListener('input', (e) => {
+        const searchTerm = e.target.value.toLowerCase();
+        
+        faqItems.forEach(item => {
+          const question = item.querySelector('.faq-question span').textContent.toLowerCase();
+          const answer = item.querySelector('.faq-answer p').textContent.toLowerCase();
+          
+          if (question.includes(searchTerm) || answer.includes(searchTerm)) {
+            item.style.display = 'block';
+          } else {
+            item.style.display = 'none';
+          }
+        });
+
+        // If searching, show all categories
+        if (searchTerm) {
+          categoryBtns.forEach(btn => {
+            if (btn.dataset.category === 'all') {
+              btn.click();
+            }
+          });
+        }
+      });
+
+      // Initialize category button styles
+      const activeBtn = document.querySelector('.faq-category-btn.active');
+      if (activeBtn) {
+        activeBtn.style.backgroundColor = '#3b82f6';
+        activeBtn.style.color = 'white';
+      }
+
+      // Style other category buttons
+      categoryBtns.forEach(btn => {
+        if (!btn.classList.contains('active')) {
+          btn.style.backgroundColor = '#f3f4f6';
+          btn.style.color = '#374151';
+          
+          btn.addEventListener('mouseenter', () => {
+            if (!btn.classList.contains('active')) {
+              btn.style.backgroundColor = '#e5e7eb';
+            }
+          });
+          
+          btn.addEventListener('mouseleave', () => {
+            if (!btn.classList.contains('active')) {
+              btn.style.backgroundColor = '#f3f4f6';
+            }
+          });
+        }
+      });
+    });
+  </script>
+</Layout>
